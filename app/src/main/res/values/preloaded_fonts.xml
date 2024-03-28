@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/anton</item>
+        <item>@font/arbutus</item>
+        <item>@font/bungee</item>
+        <item>@font/changa_one</item>
+        <item>@font/days_one</item>
+        <item>@font/lemonada</item>
+    </array>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ThemeOverlay.AppCompat.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:padding="20px"
+    app:cardCornerRadius="30dp"
+    app:cardUseCompatPadding="true">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Name"
+        android:textColor="@color/colorPrimary"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_name1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:text="Location"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_name2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Rank"
+        android:textColor="#000000"
+
+        android:textSize="20sp" />
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="non profit organisation"
+        android:textSize="20dp" /> -->
+
+    <ImageView
+        android:id="@+id/image_img"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_gravity="right"
+
+
+
+        />
+
+    <Button
+        android:id="@+id/btn_apply"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="160dp"
+        android:text="Link"
+        android:onClick="open"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_expbtn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="152dp"
+        android:src="@drawable/ic_expand_more_black_24dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="30px">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_expand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_expand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="30px"
+                android:paddingTop="40dp"
+                android:text="this is expanded view and this will onen after i clicked the button
+               and it should also change the arrows direction accordingly"
+                android:textSize="20sp" />
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
